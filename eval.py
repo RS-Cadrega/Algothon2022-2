@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import time
-from teamName import getMyPosition as getPosition
+from kitchen_sink import getMyPosition as getPosition
 
 nInst = 0
 nt = 0
@@ -22,6 +22,7 @@ def loadPrices(fn):
 
 pricesFile="./prices.txt"
 prcAll = loadPrices(pricesFile)
+prcAll = prcAll[:, 200:]
 print ("Loaded %d instruments for %d days" % (nInst, nt))
 
 #currentPos = np.zeros(nInst)
