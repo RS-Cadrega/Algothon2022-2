@@ -107,6 +107,7 @@ def getBest(data: object, stock: object) -> object:
 
 #print("Finished best_tuples")
 
+# get my position for the best value
 def getMyPosition(data):
     cur_position = [0] * 100
     for day in range(len(data[0])):
